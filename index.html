@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three.js - PBR Textures Demo</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #info {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: white;
+            background: rgba(0,0,0,0.75);
+            padding: 12px 20px;
+            border-radius: 8px;
+            pointer-events: none;
+            z-index: 100;
+            font-size: 14px;
+            backdrop-filter: blur(5px);
+            border-left: 4px solid #ff6600;
+        }
+        #info h1 {
+            margin: 0 0 5px 0;
+            font-size: 18px;
+        }
+        #info p {
+            margin: 0;
+            font-size: 12px;
+            opacity: 0.8;
+        }
+        .controls-hint {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            background: rgba(0,0,0,0.5);
+            padding: 5px 12px;
+            border-radius: 5px;
+            font-size: 12px;
+            pointer-events: none;
+            font-family: monospace;
+        }
+        .status {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            color: #0f0;
+            background: rgba(0,0,0,0.5);
+            padding: 5px 12px;
+            border-radius: 5px;
+            font-size: 11px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div id="info">
+        <h1> Three.js PBR Textures Demo</h1>
+        <p> Кубы (металл) - вращение X |  Сферы (дерево) - вращение Y |  Цилиндры (кирпич) - вращение Z</p>
+    </div>
+    <div class="controls-hint">
+         ПКМ + мышь - вращение камеры | Scroll - zoom | Панель справа - настройки
+    </div>
+    <div class="status">
+         Сцена загружена | PBR материалы готовы
+    </div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
